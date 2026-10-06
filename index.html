@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Projeto 87 kg</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="barra-acoes">
+  <button id="btn-personalizar">⚙️ Personalizar</button>
+  <button id="btn-gerar-mes">🖼️ Gerar resumo do mês</button>
+  <button id="btn-relatorio">📄 Relatório completo</button>
+  <button id="btn-limpar">🗑️ Resetar</button>
+</div>
+    <!-- SLIDE 1 — CAPA -->
+<section class="slide capa">
+ <h2>Projeto pessoal • 12 semanas</h2>
+<h1 id="titulo-projeto">Projeto 87 kg</h1>
+<p class="subtitulo">Saúde, disposição e constância — sem fórmulas milagrosas.</p>
+
+<div class="cards-capa">
+  <div class="card-capa">
+    <div class="rotulo">Ponto de partida</div>
+    <div class="valor" id="card-peso-inicial">97 kg • 1,65 m</div>
+  </div>
+  <div class="card-capa">
+    <div class="rotulo">Meta inicial</div>
+    <div class="valor" id="card-meta">87 kg</div>
+  </div>
+  <div class="card-capa">
+    <div class="rotulo">Regra nº 1</div>
+    <div class="valor">Consistência &gt; perfeição</div>
+  </div>
+</div>
+
+<p class="motivo" id="texto-motivo">Motivo: ter mais saúde, disposição e tempo de qualidade para acompanhar o Pietro ao longo da vida.</p>
+</section>
+
+<!-- SLIDE 2 — COMO USAR -->
+<section class="slide">
+  <h2>Como usar</h2>
+  <h1>Um caderno simples, feito para durar 12 semanas</h1>
+  <p class="subtitulo">Preencha pouco, mas preencha toda semana.</p>
+
+  <div class="grade-3">
+    <div class="card"><h3>✍️ Preencha pouco</h3><p>5 minutos por semana bastam.</p></div>
+    <div class="card"><h3>📅 Toda semana</h3><p>Mesmo dia, mesmo horário.</p></div>
+    <div class="card"><h3>📈 Compare com você</h3><p>Não com outra pessoa.</p></div>
+    <div class="card"><h3>🧘 Sem julgamento</h3><p>Dado é dado, não é falha.</p></div>
+    <div class="card"><h3>🔧 Ajuste quando precisar</h3><p>O plano serve você.</p></div>
+    <div class="card"><h3>🔁 Recomece sem culpa</h3><p>Um dia ruim não apaga a semana.</p></div>
+  </div>
+</section>
+
+<!-- SLIDE 3 — MOVIMENTO -->
+<section class="slide">
+  <h2>Movimento</h2>
+  <h1>Começar pequeno é começar certo</h1>
+  <p class="subtitulo">A primeira meta não é treinar pesado. É voltar a se movimentar.</p>
+
+  <div class="grade-2">
+    <div class="card destaque">
+      <h3>🚶 A cada 50–60 min de trabalho</h3>
+      <p>Levante-se e faça 2 a 5 minutos de movimento.</p>
+    </div>
+    <div class="card alerta">
+      <h3>⚠️ Sinais para parar</h3>
+      <p>Dor no peito, falta de ar fora do esperado, tontura, desmaio ou mal-estar importante → interrompa e procure avaliação médica.</p>
+    </div>
+  </div>
+</section>
+<!-- SLIDE 4 — TREINO A -->
+<section class="slide">
+  <h2>Treino A</h2>
+  <h1>Corpo inteiro — comece devagar</h1>
+  <p class="subtitulo">1 a 2 séries no início. Descanse 45–90 s entre exercícios.</p>
+
+  <div class="grade-exercicios">
+    <div class="exercicio">
+      <video src="videos/agachamento.mp4" class="video-exercicio" controls preload="metadata"></video>
+      <div class="info">
+        <div class="nome">Agachamento livre</div>
+        <div class="serie">2 x 10 • devagar</div>
+      </div>
+    </div>
+
+    <div class="exercicio">
+      <video src="videos/flexao.mp4" class="video-exercicio" controls preload="metadata"></video>
+      <div class="info">
+        <div class="nome">Flexão na parede</div>
+        <div class="serie">2 x 8 • controlado</div>
+      </div>
+    </div>
+
+    <div class="exercicio">
+      <video src="videos/remada.mp4" class="video-exercicio" controls preload="metadata"></video>
+      <div class="info">
+        <div class="nome">Remada com elástico</div>
+        <div class="serie">2 x 12</div>
+      </div>
+    </div>
+
+    <div class="exercicio">
+      <video src="videos/prancha.mp4" class="video-exercicio" controls preload="metadata"></video>
+      <div class="info">
+        <div class="nome">Prancha</div>
+        <div class="serie">3 x 20–30 s</div>
+      </div>
+    </div>
+
+    <div class="exercicio">
+      <video src="videos/panturrilha.mp4" class="video-exercicio" controls preload="metadata"></video>
+      <div class="info">
+        <div class="nome">Elevação de panturrilha</div>
+        <div class="serie">2 x 15</div>
+      </div>
+    </div>
+
+    <div class="exercicio">
+      <video src="videos/alongamento.mp4" class="video-exercicio" controls preload="metadata"></video>
+      <div class="info">
+        <div class="nome">Alongamento final</div>
+        <div class="serie">5 min</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 5 — TREINO B -->
+<section class="slide">
+  <h2>Treino B</h2>
+  <h1>Corpo inteiro — variação</h1>
+  <p class="subtitulo">Alternar A/B evita monotonia e trabalha padrões diferentes.</p>
+
+  <div class="grade-exercicios">
+    <div class="exercicio">
+      <video src="videos/afundo.mp4" class="video-exercicio" controls preload="metadata"></video>
+      <div class="info"><div class="nome">Afundo alternado</div><div class="serie">2 x 8 por perna</div></div>
+    </div>
+    <div class="exercicio">
+      <video src="videos/supino.mp4" class="video-exercicio" controls preload="metadata"></video>
+      <div class="info"><div class="nome">Supino com elástico</div><div class="serie">2 x 12</div></div>
+    </div>
+    <div class="exercicio">
+      <video src="videos/ponte.mp4" class="video-exercicio" controls preload="metadata"></video>
+      <div class="info"><div class="nome">Ponte de glúteo</div><div class="serie">2 x 12</div></div>
+    </div>
+    <div class="exercicio">
+      <video src="videos/prancha-lateral.mp4" class="video-exercicio" controls preload="metadata"></video>
+      <div class="info"><div class="nome">Prancha lateral</div><div class="serie">2 x 15 s cada lado</div></div>
+    </div>
+    <div class="exercicio">
+      <video src="videos/joelho.mp4" class="video-exercicio" controls preload="metadata"></video>
+      <div class="info"><div class="nome">Elevação de joelho</div><div class="serie">2 x 12</div></div>
+    </div>
+    <div class="exercicio">
+      <video src="videos/caminhada.mp4" class="video-exercicio" controls preload="metadata"></video>
+      <div class="info"><div class="nome">Caminhada leve</div><div class="serie">10 min</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 6 — PROGRESSÃO -->
+<section class="slide">
+  <h2>Progressão</h2>
+  <h1>12 semanas, passo a passo</h1>
+  <p class="subtitulo">O objetivo é aumentar capacidade, não se destruir no primeiro mês.</p>
+
+  <table>
+    <thead>
+      <tr><th>Semanas</th><th>Caminhada</th><th>Força</th><th>Foco</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>1–2</strong></td><td>10–15 min × 5</td><td>A/B × 2</td><td>Criar hábito</td></tr>
+      <tr><td><strong>3–4</strong></td><td>15–20 min × 5</td><td>A/B × 2</td><td>Ganhar regularidade</td></tr>
+      <tr><td><strong>5–6</strong></td><td>20–25 min × 5</td><td>A/B × 2–3</td><td>Aumentar volume</td></tr>
+      <tr><td><strong>7–8</strong></td><td>25–30 min × 5</td><td>A/B × 3</td><td>Melhorar resistência</td></tr>
+      <tr><td><strong>9–10</strong></td><td>30–35 min × 5</td><td>A/B × 3</td><td>Consolidar</td></tr>
+      <tr><td><strong>11–12</strong></td><td>30–40 min × 5</td><td>A/B × 3</td><td>Manter e avaliar</td></tr>
+    </tbody>
+  </table>
+</section>
+<!-- SLIDE 7 — FICHA SEMANAL -->
+<section class="slide">
+  <h2>Acompanhamento</h2>
+  <h1>Ficha semanal</h1>
+  <p class="subtitulo">Compare você com você, não com outra pessoa.</p>
+
+  <div class="ficha">
+    <label>Semana: <input type="text" data-campo="semana"></label>
+    <label>Peso: <input type="text" data-campo="peso"></label>
+    <label>Cintura: <input type="text" data-campo="cintura"></label>
+    <label>Energia (0–10): <input type="text" data-campo="energia"></label>
+    <label>Sono (0–10): <input type="text" data-campo="sono"></label>
+    <label>Caminhadas: <input type="text" data-campo="caminhadas"></label>
+    <label>Treinos A/B: <input type="text" data-campo="treinos"></label>
+  </div>
+
+  <label class="bloco">Observações:
+    <textarea data-campo="observacoes" rows="4"></textarea>
+  </label>
+</section>
+
+<!-- SLIDE 8 — PAINEL DE EVOLUÇÃO -->
+<section class="slide">
+  <h2>Evolução</h2>
+  <h1>Painel mensal</h1>
+  <p class="subtitulo">Preencha ao final de cada mês.</p>
+
+  <div class="grade-3">
+    <div class="card">
+      <h3>Mês 1</h3>
+      <label>Peso: <input type="text" data-campo="mes1-peso"></label>
+      <label>Cintura: <input type="text" data-campo="mes1-cintura"></label>
+      <label>Energia: <input type="text" data-campo="mes1-energia"></label>
+    </div>
+    <div class="card">
+      <h3>Mês 2</h3>
+      <label>Peso: <input type="text" data-campo="mes2-peso"></label>
+      <label>Cintura: <input type="text" data-campo="mes2-cintura"></label>
+      <label>Energia: <input type="text" data-campo="mes2-energia"></label>
+    </div>
+    <div class="card">
+      <h3>Mês 3</h3>
+      <label>Peso: <input type="text" data-campo="mes3-peso"></label>
+      <label>Cintura: <input type="text" data-campo="mes3-cintura"></label>
+      <label>Energia: <input type="text" data-campo="mes3-energia"></label>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 9 — ALIMENTAÇÃO -->
+<section class="slide">
+  <h2>Alimentação</h2>
+  <h1>Estrutura, não prisão</h1>
+  <p class="subtitulo">Vamos ajustar depois de entender sua rotina real.</p>
+
+  <div class="grade-3">
+    <div class="card"><h3>🍽️ O que como hoje</h3><p>Registre sem julgamento.</p></div>
+    <div class="card"><h3>💰 O que cabe no bolso</h3><p>O plano precisa caber na sua realidade.</p></div>
+    <div class="card"><h3>🔁 O que consigo manter</h3><p>Melhor simples e possível do que perfeito e curto.</p></div>
+  </div>
+</section>
+
+<!-- SLIDE 10 — CHECKLIST -->
+<section class="slide">
+  <h2>Rotina diária</h2>
+  <h1>Checklist do dia</h1>
+  <p class="subtitulo">Um dia imperfeito ainda pode ser um dia bom.</p>
+
+  <ul class="checklist">
+    <li><input type="checkbox" data-campo="check-refeicoes"> Fiz minhas refeições sem passar longos períodos sem comer</li>
+    <li><input type="checkbox" data-campo="check-agua"> Bebi água ao longo do dia</li>
+    <li><input type="checkbox" data-campo="check-treino"> Caminhei ou fiz treino</li>
+    <li><input type="checkbox" data-campo="check-levantar"> Levantei da cadeira durante o trabalho</li>
+    <li><input type="checkbox" data-campo="check-computador"> Evitei comer automaticamente diante do computador</li>
+    <li><input type="checkbox" data-campo="check-escolha"> Fiz uma escolha melhor quando tive vontade de exagerar</li>
+    <li><input type="checkbox" data-campo="check-sono"> Dormi ou tentei dormir em horário razoável</li>
+  </ul>
+
+  <label class="bloco">Hoje, o que eu fiz bem?
+    <textarea data-campo="fez-bem" rows="2"></textarea>
+  </label>
+</section>
+
+<!-- SLIDE 11 — MOTIVAÇÃO -->
+<section class="slide motivacao">
+  <h2>Quando faltar motivação</h2>
+  <h1>Não negocie com a versão de você que quer desistir.</h1>
+  <p class="frase">"Não preciso fazer perfeito. Só preciso fazer o próximo passo."</p>
+
+  <div class="grade-4">
+    <div class="mini">Não consegue 30 min? <strong>Faça 10.</strong></div>
+    <div class="mini">Não consegue treinar? <strong>Caminhe.</strong></div>
+    <div class="mini">Comeu demais? <strong>Volte na próxima refeição.</strong></div>
+    <div class="mini">Perdeu uma semana? <strong>Recomece no dia seguinte.</strong></div>
+  </div>
+</section>
+<!-- SLIDE 12 — PONTO DE PARTIDA -->
+<section class="slide">
+  <h2>Segunda-feira</h2>
+  <h1>Ponto de partida</h1>
+  <p class="subtitulo">Antes de cortar comida, vamos conhecer sua rotina.</p>
+
+  <div class="ficha-vertical">
+    <label>🌅 Que horas você acorda e vai dormir? <input type="text" data-campo="rotina-sono"></label>
+    <label>☕ O que come no café da manhã? <input type="text" data-campo="rotina-cafe"></label>
+    <label>🍛 Como é seu almoço? <input type="text" data-campo="rotina-almoco"></label>
+    <label>⏰ O que acontece entre almoço e jantar? <input type="text" data-campo="rotina-tarde"></label>
+    <label>🌙 O que costuma comer à noite? <input type="text" data-campo="rotina-noite"></label>
+    <label>🥤 Refrigerante / suco / álcool por dia? <input type="text" data-campo="rotina-bebidas"></label>
+    <label>🚶 Quanto consegue caminhar hoje sem cansar muito? <input type="text" data-campo="rotina-caminhada"></label>
+  </div>
+</section>
+
+<!-- SLIDE 13 — CUIDADO -->
+<section class="slide cuidado">
+  <h2>Um cuidado importante</h2>
+  <h1>Este material organiza. Não substitui avaliação profissional.</h1>
+  <p>Como você relatou cansaço rápido e está sem atividade física, vale conversar com um médico antes de aumentar a intensidade dos exercícios.</p>
+
+  <div class="card alerta">
+    <h3>⛔ Sinais para interromper o exercício</h3>
+    <p>Dor forte, tontura, desmaio, falta de ar desproporcional ao esforço ou dor/pressão no peito → pare e procure atendimento.</p>
+  </div>
+
+  <p class="destaque-final">Objetivo: ficar mais saudável para viver mais — não sofrer para perder peso.</p>
+</section>
+
+<!-- SLIDE 14 — ANOTAÇÕES -->
+<section class="slide">
+  <h2>Espaço livre</h2>
+  <h1>Anotações</h1>
+  <p class="subtitulo">Ideias, dificuldades, vitórias e ajustes.</p>
+  <textarea class="anotacoes" data-campo="anotacoes-livres" rows="10"></textarea>
+</section>
+<!-- PAINEL DE PERSONALIZAÇÃO -->
+<div id="painel-personalizar" class="painel-personalizar">
+  <div class="painel-conteudo">
+    <h3>⚙️ Personalizar projeto</h3>
+    <p class="painel-sub">Esses dados vão aparecer na capa e nos resumos.</p>
+
+    <label>Nome
+      <input type="text" id="personalizar-nome" placeholder="Rian">
+    </label>
+
+    <label>Peso inicial (kg)
+      <input type="text" id="personalizar-peso-inicial" placeholder="97">
+    </label>
+
+    <label>Meta (kg)
+      <input type="text" id="personalizar-meta" placeholder="87">
+    </label>
+
+    <label>Altura (m)
+      <input type="text" id="personalizar-altura" placeholder="1,65">
+    </label>
+
+    <label>Pessoa importante
+      <input type="text" id="personalizar-pessoa" placeholder="Pietro">
+    </label>
+
+    <label>Motivo
+      <textarea id="personalizar-motivo" rows="3" placeholder="Ter mais saúde, disposição e tempo de qualidade para acompanhar o Pietro ao longo da vida."></textarea>
+    </label>
+
+    <div class="painel-botoes">
+      <button id="btn-personalizar-cancelar" class="btn-secundario">Cancelar</button>
+      <button id="btn-personalizar-salvar" class="btn-primario">Salvar</button>
+    </div>
+  </div>
+</div>
+<!-- CARTÃO PARA GERAR PNG (escondido) -->
+<div id="cartao-mes" class="cartao-mes">
+  <div class="cartao-topo">
+    <div class="cartao-projeto" id="cartao-projeto">Projeto 87 kg</div>
+    <div class="cartao-pessoa" id="cartao-pessoa">Rian</div>
+    <div class="cartao-data" id="cartao-data">Outubro 2026</div>
+  </div>
+
+  <div class="cartao-corpo">
+    <div class="cartao-linha">
+      <span class="cartao-rotulo">Peso inicial</span>
+      <span class="cartao-valor" id="cartao-peso-inicial">97 kg</span>
+    </div>
+    <div class="cartao-linha">
+      <span class="cartao-rotulo">Peso atual</span>
+      <span class="cartao-valor" id="cartao-peso-atual">—</span>
+    </div>
+    <div class="cartao-linha destaque">
+      <span class="cartao-rotulo">Progresso</span>
+      <span class="cartao-valor" id="cartao-progresso">—</span>
+    </div>
+
+    <div class="cartao-divisor"></div>
+
+    <div class="cartao-linha">
+      <span class="cartao-rotulo">Cintura</span>
+      <span class="cartao-valor" id="cartao-cintura">—</span>
+    </div>
+    <div class="cartao-linha">
+      <span class="cartao-rotulo">Energia</span>
+      <span class="cartao-valor" id="cartao-energia">—</span>
+    </div>
+
+    <div class="cartao-divisor"></div>
+
+    <div class="cartao-linha">
+      <span class="cartao-rotulo">Meta</span>
+      <span class="cartao-valor" id="cartao-meta">87 kg</span>
+    </div>
+    <div class="cartao-linha">
+      <span class="cartao-rotulo">Faltam</span>
+      <span class="cartao-valor" id="cartao-faltam">—</span>
+    </div>
+  </div>
+
+  <div class="cartao-rodape" id="cartao-motivo">
+    Saúde, disposição e constância.
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
