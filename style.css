@@ -713,3 +713,199 @@ body {
   font-style: italic;
   line-height: 1.5;
 }
+/* ============================================================
+   VERSÃO MOBILE — telas pequenas (até 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* ---------- GERAL ---------- */
+  body {
+    padding: 70px 8px 20px 8px;
+  }
+
+  /* ---------- SLIDE ---------- */
+  .slide {
+    min-height: auto;
+    aspect-ratio: auto;
+    padding: 24px 20px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+  }
+
+  /* ---------- TIPOGRAFIA ---------- */
+  h1 {
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .subtitulo {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  /* ---------- CAPA ---------- */
+  .capa h1 {
+    font-size: 36px;
+  }
+
+  .capa .subtitulo {
+    font-size: 15px;
+  }
+
+  .cards-capa {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .card-capa {
+    padding: 14px;
+  }
+
+  .card-capa .valor {
+    font-size: 20px;
+  }
+
+  /* ---------- GRADES viram 1 coluna ---------- */
+  .grade-2,
+  .grade-3,
+  .grade-4,
+  .grade-exercicios {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* ---------- CARDS ---------- */
+  .card {
+    padding: 14px 16px;
+  }
+
+  /* ---------- EXERCÍCIOS ---------- */
+  .exercicio .info {
+    padding: 8px 10px;
+  }
+
+  .exercicio .nome {
+    font-size: 14px;
+  }
+
+  .exercicio .serie {
+    font-size: 12px;
+  }
+
+  /* ---------- TABELA ---------- */
+  table {
+    font-size: 12px;
+  }
+
+  th, td {
+    padding: 8px 6px;
+  }
+
+  /* ---------- FICHAS (inputs) ---------- */
+  .ficha {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .ficha label,
+  .ficha-vertical label,
+  .card label {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+
+  .ficha input,
+  .ficha-vertical input,
+  .card input {
+    font-size: 15px;
+    padding: 6px 0;
+  }
+
+  textarea {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  /* ---------- CHECKLIST ---------- */
+  .checklist li {
+    font-size: 14px;
+    padding: 12px 0;
+    gap: 10px;
+  }
+
+  .checklist input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+  }
+
+  /* ---------- MOTIVAÇÃO ---------- */
+  .motivacao h1 {
+    font-size: 24px;
+  }
+
+  .motivacao .frase {
+    font-size: 20px;
+    margin: 16px 0;
+  }
+
+  /* ---------- CUIDADO ---------- */
+  .cuidado h1 {
+    font-size: 22px;
+  }
+
+  /* ---------- BARRA DE AÇÕES ---------- */
+  .barra-acoes {
+    padding: 8px 8px;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .barra-acoes button {
+    font-size: 11px;
+    padding: 8px 10px;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  /* ---------- PAINEL DE PERSONALIZAÇÃO ---------- */
+  .painel-conteudo {
+    padding: 22px 20px;
+    max-height: 95vh;
+  }
+
+  .painel-conteudo h3 {
+    font-size: 19px;
+  }
+
+  /* ---------- CARTÃO DO PNG (gerar em tamanho menor) ---------- */
+  .cartao-mes {
+    width: 640px;
+    padding: 32px 36px;
+  }
+
+  .cartao-pessoa {
+    font-size: 30px;
+  }
+
+  .cartao-valor {
+    font-size: 20px;
+  }
+}
